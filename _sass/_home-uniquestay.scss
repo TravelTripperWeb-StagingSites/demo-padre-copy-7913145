@@ -1,0 +1,33 @@
+.home-uniquestay {
+	 	position:relative;
+			.caption-stay{
+			font-size:54px;
+			font-family:'Blythe W01 Mono45';
+			text-align:center;
+			margin-top:90px;
+			color:#9d8d64;
+			letter-spacing:3px;
+			}
+		.flower-left{
+			position:absolute;
+			top: 158px;
+    		left: -50px;
+			}
+			
+		.comfort-text{
+			font-size:72px;
+			font-family:'Avenir LT W01_95 Black1475556';
+			color:#9d8d64;
+			position:absolute;
+			right: 0px;
+    		bottom: 0px;
+			text-transform:uppercase;
+			 -ms-transform: rotate(90deg); /* IE 9 */
+			-ms-transform-origin: 93% 25%; /* IE 9 */
+			-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+			-webkit-transform-origin: 93% 25%; /* Chrome, Safari, Opera */
+			transform: rotate(90deg);
+			transform-origin:93% 25%;
+			}
+		
+	}
