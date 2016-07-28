@@ -1,4 +1,5 @@
 .home-offers {
+	position:relative;
 	.header{
 		
 		background-color:#1a1a1a;
@@ -30,14 +31,19 @@
 		}
 	 .offers-list{
 		 
-		 max-width:1030px;
+		 max-width:1150px;
 		 margin:0px auto;
 		 margin-top:-166px;
+		 margin-bottom:20px;
 		 text-align:center;
 		  @media (max-width: 768px)
 		 {
 			 margin-top:0px;
+			 margin-bottom:0px;
 			 }
+		.item-padding{
+			padding:0px 20px; 
+			}
 		 .col-sm-4 {
 			 margin-bottom:25px;
 			 }
@@ -69,7 +75,21 @@
 			
 			}	
 			
-	
+	.flower-right{
+		-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+		position:absolute;
+		right:0px;
+		top:30%;
+		z-index:60;
+		@media (max-width:768px){
+		display:none;
+		}
+				}
 .testmonials{
 	position:relative;
 	min-height:370px;

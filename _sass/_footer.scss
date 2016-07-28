@@ -4,7 +4,16 @@
 			width: 100%;
 		}
 		}
-    background-color: #1a1a1a;
+    .container{
+		background-color: #1a1a1a;
+		}
+	.hotel-name{
+			padding:38px 0px 10px 0px;
+			@media (max-width: 480px){
+			font-size:33px;	
+			padding: 28px 0px 9px 0px;
+		}
+		}
    .logo-container {
         width: 23%;
         background-color: #8f7d4f;
@@ -26,13 +35,20 @@
     }
 	.address-container {
         width: 23%;
-        
         float: left;
 		letter-spacing:1px;
         padding: 38px 0px 0px 0px;
+		@media(max-width:1024px) {
+			padding: 20px 0px 0px 0px;
+			}
 		P{
 			color:#fff;
 			padding-left: 33px;
+			@media(max-width: 1024px) {
+			
+			font-size:10px;
+			}
+			
 			}
         @media(max-width: $screen-sm-max) {
             width: 100%;

@@ -1,131 +1,135 @@
-
 @import 'bootstrap.scss';
 html {
-	width: 100%;
+    width: 100%;
 }
 body {
-	margin: 50px 0px;
-	background-color:#fcfbf9;
-	 @media(max-width: 1154px) {
-		margin:0px; 
-	 }
-	
+    margin: 50px 0px;
+    background-color: #fcfbf9;
+    @media(max-width: 1154px) {
+        margin: 0px;
+    }
 }
-a, a:hover, a:visited, a:active{ text-decoration:none;}
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
 .hover-transition {
-	transition: all 0.6s ease;
+    transition: all 0.6s ease;
 }
 .global-container {
-	max-width: 1220px;
-	background-color: #fff;
-	margin: 0px auto;
+    max-width: 1220px;
+    background-color: #fff;
+    margin: 0px auto;
 }
-
 @media (min-width: 992px) {
-.container {
-	width: 100%;
-}
+    .container {
+        width: 100%;
+    }
 }
 .no-gutter {
-	padding: 0 !important;
-	margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .img-width {
-	width: 100%;
+    width: 100%;
 }
 .section-margin {
-	margin-top: 65px;
+    margin-top: 65px;
+}
+.section-padding {
+    padding-top: 65px;
 }
 .img-top-border {
-	border-top: 21px solid #8f7d4f;
+    border-top: 21px solid #8f7d4f;
 }
 .common-description-block {
-	text-align: center;
- h4 {
- font-family:'Avenir LT W01_65 Medium1475532';
- color:#8f7d4f;
- font-size:14px;
- margin-bottom:0px;
-}
-p {
-	font-family: 'Avenir LT W01_45 Book1475508';
-	color: #8d8d8d;
-	line-height: 25px;
-	font-size: 14px;
-}
-.dimond {
-	font-size: 20px;
-	color: #8f7d4f;
-	display: block;
-	margin: 10px 0px;
-}
+    text-align: center;
+    h4 {
+        font-family: 'Avenir LT W01_65 Medium1475532';
+        color: #8f7d4f;
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    p {
+        font-family: 'Avenir LT W01_45 Book1475508';
+        color: #8d8d8d;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .dimond {
+        font-size: 20px;
+        color: #8f7d4f;
+        display: block;
+        margin: 10px 0px;
+    }
 }
 .brown-button {
- a {
-	 font-family:'Avenir LT W01_45 Book1475508';
-	 letter-spacing:3px;
-	 font-size:13px;
-	 padding:18px 45px;
-	
-	 color:#8f7d4f;
-	 display:inline-block;
-	 border:1px solid #8f7d4f;
-	 text-transform:uppercase;
-	 &:hover {
-	 text-decoration:none;
-	 background-color:#8f7d4f;
-	 color:#fff;
-			}
-	}
+    a {
+        font-family: 'Avenir LT W01_45 Book1475508';
+        letter-spacing: 3px;
+        font-size: 13px;
+        padding: 18px 45px;
+        color: #8f7d4f;
+        display: inline-block;
+        border: 1px solid #8f7d4f;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+            background-color: #8f7d4f;
+            color: #fff;
+        }
+    }
 }
 .white-button {
- a {
-	 font-family:'Avenir LT W01_45 Book1475508';
-	 letter-spacing:3px;
-	 background-color:#fff;
-	 font-size:13px;
-	 padding:18px 45px;
-	
-	 color:#8f7d4f;
-	 display:inline-block;
-	 text-align:center;
-	 text-transform:uppercase;
-	 &:hover {
-	 text-decoration:none;
-	 background-color:#2b2a2a;
-	 color:#fff;
-			}
-	}
+    a {
+        font-family: 'Avenir LT W01_45 Book1475508';
+        letter-spacing: 3px;
+        background-color: #fff;
+        font-size: 13px;
+        padding: 18px 45px;
+        color: #8f7d4f;
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+            background-color: #2b2a2a;
+            color: #fff;
+        }
+    }
 }
-.brown-color{color:#8f7d4f !important;}
-.text-cursive{
-	font-size: 54px;
+.brown-color {
+    color: #8f7d4f !important;
+}
+.text-cursive {
+    font-size: 54px;
     font-family: 'Blythe W01 Mono45';
     text-align: center;
     color: #9d8d64;
-   
-	}
-.text-bold{
-	font-size: 48px;
+}
+.text-bold {
+    font-size: 48px;
     font-family: 'Avenir LT W01_95 Black1475556';
     color: #9d8d64;
     text-transform: uppercase;
-	}	
-p{font-family: 'Avenir LT W01_45 Book1475508';
+}
+p {
+    font-family: 'Avenir LT W01_45 Book1475508';
     color: #8d8d8d;
     line-height: 25px;
     font-size: 14px;
-	
-	}
-.-show{
-	    position: fixed;
-		top:0;
-		z-index: 999;
-		min-width: 1220px;
 }
-.-banner-onscroll-padding{
-	padding-top:98px;
-	}
+.-show {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    min-width: 1220px;
+}
+.-banner-onscroll-padding {
+    padding-top: 98px;
+}
 /*font-family:'Didot W01 Roman';
 font-family:'Didot W01 Italic';
 font-family:'Didot W01 Bold';
@@ -144,7 +148,6 @@ font-family:'Avenir LT W01_95 Black1475556';
 font-family:'Avenir LT W01_95 Black_1475562';
 font-family:'Blythe W01 Mono45';*/
 
-
 @import 'header';
 @import 'carousel';
 @import 'footer';
@@ -154,4 +157,4 @@ font-family:'Blythe W01 Mono45';*/
 @import 'home-events-weddings';
 @import 'home-offers';
 @import 'home-activities';
-
+@import 'location';

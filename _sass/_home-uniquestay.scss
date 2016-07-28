@@ -1,3 +1,5 @@
+
+
 .home-uniquestay {
 	 	position:relative;
 			.caption-stay{
@@ -13,21 +15,36 @@
 			top: 158px;
     		left: -50px;
 			}
+		.vertical-text-container{
 			
-		.comfort-text{
-			font-size:72px;
-			font-family:'Avenir LT W01_95 Black1475556';
-			color:#9d8d64;
-			position:absolute;
-			right: 0px;
-    		bottom: 0px;
-			text-transform:uppercase;
-			 -ms-transform: rotate(90deg); /* IE 9 */
-			-ms-transform-origin: 93% 25%; /* IE 9 */
-			-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-			-webkit-transform-origin: 93% 25%; /* Chrome, Safari, Opera */
-			transform: rotate(90deg);
-			transform-origin:93% 25%;
+			position:relative;
+					.comfort-text{
+					font-size:72px;
+					font-family:'Avenir LT W01_95 Black1475556';
+					color:#9d8d64;
+					position:absolute;
+					right: 0px;
+					bottom: 0px;
+					text-transform:uppercase;
+					 -ms-transform: rotate(90deg); /* IE 9 */
+					-ms-transform-origin: 89% 0%; /* IE 9 */
+					-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+					-webkit-transform-origin: 94% 0%; /* Chrome, Safari, Opera */
+					transform: rotate(90deg);
+					transform-origin:94% 0%;
+							@media (max-width:768px){
+								
+								font-size:34px;
+								
+								}
+								@media (max-width:320px){
+								
+								font-size:20px;
+								
+								}
 			}
+			
+			}	
+		
 		
 	}
