@@ -1,5 +1,6 @@
 .hotels-container {
 	 	max-width:1120px;
+		padding-top:98px;
 		.col-md-2 {
 				min-width: 20%;
 				padding-left: 7px;
@@ -17,7 +18,14 @@
 		padding:50px 0px 0px 0px;
 	}
 	h2{
-		padding-top:35px;
+		padding-top:24px;
+		}
+	.discover-more-container{
+		padding-top: 53px;
+		.description{
+			max-width:440px;
+			padding-left:43px;
+			}
 		}
 		
 	}

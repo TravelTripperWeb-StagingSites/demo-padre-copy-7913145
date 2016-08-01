@@ -1,4 +1,6 @@
 .footer {
+		font-size:13px;
+	
 		@media (max-width: 768px){
 		.container {
 			width: 100%;
@@ -15,7 +17,7 @@
 		}
 		}
    .logo-container {
-        width: 23%;
+        width: 22.3%;
         background-color: #8f7d4f;
         float: left;
         padding: 38px 0px;
@@ -25,7 +27,7 @@
         }
     }
     .links-container {
-        width: 77%;
+        width: 77.7%;
         float: left;
         padding: 33px 0px 0px 0px;
         @media(max-width: $screen-sm-max) {
@@ -34,7 +36,7 @@
         }
     }
 	.address-container {
-        width: 23%;
+        width: 22.3%;
         float: left;
 		letter-spacing:1px;
         padding: 38px 0px 0px 0px;
@@ -43,7 +45,9 @@
 			}
 		P{
 			color:#fff;
-			padding-left: 33px;
+			padding-left: 29px;
+			font-size: 13px;
+			letter-spacing: .066em;
 			@media(max-width: 1024px) {
 			
 			font-size:10px;
@@ -56,8 +60,8 @@
         }
     }
     .address-map {
-        width: 77%;
-        float: left;
+        width: 77.7%;
+        float: right;
        
         @media(max-width: $screen-sm-max) {
             width: 100%;
@@ -65,6 +69,7 @@
         }
     }
     ul {
+		padding-left:46px;
         list-style: none;
 		 @media(max-width: $screen-sm-max) {
 			padding-left:18px; 
@@ -73,9 +78,10 @@
             a {
                 font-family: 'Avenir LT W01_65 Medium1475532';
                 font-size: 13px;
-                padding: 3px 0px;
+                padding: .3em 0px;
                 color: #8f7d4f;
                 display: block;
+				letter-spacing: .066em;
 				  @media(max-width: $screen-sm-max) {
 				  
 				  }
@@ -86,13 +92,15 @@
         }
     }
     .social-icons {
+		margin:0px 54px;
         ul {
-            padding: 0px;
+			
+            padding:0px 37px ;
             border-left: 1px solid #8f7d4f;
             border-right: 1px solid #8f7d4f;
-            height: 115px;
+           
             margin: 0px;
-            padding-top: 20px;
+            
 			 @media(max-width: $screen-xs-max) {
 				  
 				   border:none;
@@ -101,7 +109,7 @@
             li {
                 a {
                     font-size: 17px;
-                    padding: 10px;
+                    padding: 9px;
                     text-align: center;
                 }
             }
@@ -109,6 +117,7 @@
     }
     .textbox-wrapper {
         height: 45px;
+		max-width: 263px;
         border: solid 1px #fff;
         @media(max-width: $screen-sm-max) {
             width: 260px;
@@ -184,7 +193,7 @@
 		width: 300px;
         font-size: 13px;
         font-weight: normal;
-        padding: 44px 15px 2px 20px;
+        padding: 52px 15px 7px 24px;
         text-transform: uppercase;
         color: #8f7d4f;
         @media(max-width: $screen-sm-max) {
