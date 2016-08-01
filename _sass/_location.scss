@@ -126,7 +126,7 @@
 }
 .location-carousel-caption{
 	position: absolute;
-    top: calc(50% - 88px ) ;
+    top:calc(51.2% - 88px ) ;
     z-index: 32;
     font-family: 'Avenir LT W01_95 Black1475556';
     text-transform: uppercase;
@@ -137,6 +137,8 @@
 	h3{
 					font-size:72px;
 					margin:0px auto;
+					line-height: 68px;
+   					letter-spacing: .02em;
 					color:#fff;
 					text-align:center;
 					@media (max-width: 768px)
