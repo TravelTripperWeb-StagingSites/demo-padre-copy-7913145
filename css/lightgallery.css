@@ -20,7 +20,7 @@
   -moz-osx-font-smoothing: grayscale; }
 
 .lg-actions .lg-next, .lg-actions .lg-prev {
-		background-image:url(../assets/images/gallery-icons.png);
+		background-image:url(../images/gallery-icons.png);
 		background-repeat:no-repeat;
   border-radius: 2px;
   color: #666;
@@ -556,7 +556,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     top: 0;
     white-space: nowrap; }
   .lg-outer .lg-item {
-    background: url("/assets/images/loading.gif") no-repeat scroll center center transparent;
+    background: url("/images/loading.gif") no-repeat scroll center center transparent;
     display: none !important; }
   .lg-outer.lg-css3 .lg-prev-slide, .lg-outer.lg-css3 .lg-current, .lg-outer.lg-css3 .lg-next-slide {
     display: inline-block !important; }
