@@ -37,14 +37,21 @@ a:active {
 }
 .section-margin {
     margin-top: 65px;
+	@media (max-width:800px){
+	 margin-top: 0px;
+	}
 }
 .section-padding {
     padding-top: 65px;
+	@media (max-width:800px){
+	 padding-top: 0px;
+	}
 }
 .img-top-border {
     border-top: 21px solid #8f7d4f;
 }
 .common-description-block {
+	max-width:450px;
     text-align: center;
     h4 {
         font-family: 'Avenir LT W01_65 Medium1475532';
@@ -53,10 +60,9 @@ a:active {
         margin-bottom: 0px;
     }
     p {
-        font-family: 'Avenir LT W01_45 Book1475508';
+       
         color: #8d8d8d;
-        line-height: 25px;
-        font-size: 14px;
+        
     }
     .dimond {
         font-size: 20px;
@@ -139,6 +145,7 @@ p {
     color: #8d8d8d;
     line-height: 25px;
     font-size: 14px;
+	letter-spacing:1px;
 }
 .-show {
     position: fixed;
@@ -148,6 +155,20 @@ p {
 }
 .-banner-onscroll-padding {
     padding-top: 98px;
+	@media (max-width: 1154px){
+		padding-top: 0px;	
+		}
+}
+.view-offer-button{
+	padding:18px 45px !important;
+	@media (max-width:768px){
+		padding:16px !important;
+	}
+	}
+.content-top-margin{
+@media (max-width: 1154px){
+		margin-top:70px;	
+		}
 }
 /*font-family:'Didot W01 Roman';
 font-family:'Didot W01 Italic';
@@ -178,3 +199,4 @@ font-family:'Blythe W01 Mono45';*/
 @import 'home-activities';
 @import 'location';
 @import 'gallery';
+@import 'room-details';
