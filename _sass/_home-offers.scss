@@ -39,12 +39,16 @@
 		 margin-bottom:20px;
 		 text-align:center;
 		  @media (max-width: 768px)
-		 {
+		 		{
 			 margin-top:0px;
 			 margin-bottom:0px;
 			 }
 		.item-padding{
 			padding:0px 25px; 
+			  @media (max-width: 768px)
+		 		{
+					padding:0px; 
+					}
 			}
 		 .col-sm-4 {
 			 
@@ -95,7 +99,7 @@
 		position:absolute;
 		right:0px;
 		top:30%;
-		z-index:60;
+		/*z-index:60;*/
 		@media (max-width:768px){
 		display:none;
 		}

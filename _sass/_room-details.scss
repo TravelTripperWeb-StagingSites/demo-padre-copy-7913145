@@ -1,0 +1,156 @@
+.room-container{
+	
+	.sublinks{
+		    padding: 32px 0px 25px 0px;
+   			 border-bottom: 20px solid #8f7d4f;
+		ul{
+			    margin: 0;
+				padding: 0;
+				text-align: center;
+			li{
+				list-style-type: none;
+				display: inline-block;
+				margin: 0 14px;
+				font-family:'Avenir LT W01_45 Book1475508';
+				font-size:14px;
+				letter-spacing:.1em;
+			a{
+			color:#1a1a1a;
+			padding:10px 0px;	
+			&:hover{
+				font-family:'Avenir LT W01_85 Heavy1475544';
+				color:#8f7d4f;
+				
+				}
+			}	
+			
+			
+			}
+		  }
+		}
+	
+}
+
+
+.room-carousel-caption{
+	max-width:480px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+	background-color:rgba(255,255,255,0.7);
+	z-index: 32;
+	font-family: 'Avenir LT W01_95 Black1475556';
+    text-transform: uppercase;
+    text-align: center;
+	text-shadow: none;
+	padding:60px 70px;
+	@media (max-width: 1154px){
+		padding:30px;
+		}
+		@media (max-width: 600px){
+		padding:5px;
+		}
+	h3{
+		font-size:48px;
+		margin:0px;
+		color:#9d8d64;
+		line-height: 66px;
+			@media (max-width: 1154px){
+			line-height:inherit;
+			font-size:40px;
+				
+			}
+			@media (max-width: 600px){
+			line-height:inherit;
+			font-size:15px;
+				
+			}
+		}
+	h6{
+		font-size:20px;
+		letter-spacing:.2em;
+		margin: 32px 0px 50px 0px;
+		@media (max-width: 1154px){
+			margin:10px;
+			font-size:15px;	
+			}
+			@media (max-width: 600px){
+			margin:10px;
+			font-size:9px;	
+				
+			}
+		}
+	a{
+		padding: 18px 20px;
+		
+		@media (max-width: 600px){
+				font-size:10px;
+			    padding: 5px 10px;	
+				
+			}
+		}
+}
+.style-comfort-section{
+	
+	h5{
+		font-size:18px;
+		font-family:'Avenir LT W01_95 Black1475556';
+		text-transform:uppercase;
+		color:#9d8d64;
+		line-height: 24px;
+        padding: 36px 20px 30px 0px;
+		
+		}
+	
+	.img-width{
+		
+		max-width:937px;
+		img{
+			border-top:20px solid #8f7d4f;
+			}
+		}
+	
+	.style-container{
+		padding-top:64px;
+		.text-left-alignment{
+			padding-left:150px;
+			h2{
+				margin:0px;
+				}
+				h3{
+					text-align:left;
+					margin: 7px 0px 35px 0px;
+					}
+				p{
+					max-width:438px;
+					}
+				
+			}
+		}
+	
+	.facilities-section{
+					padding:38px 20px 20px 133px;
+					h6{
+						font-family: 'Avenir LT W01_65 Medium1475532';
+						font-weight: 600;
+						letter-spacing: .1em;
+						font-size: 14px;
+						}
+					ul{	padding:0px;
+						
+						list-style:none;
+						li{
+							
+							color: #2b2a2a;
+							letter-spacing: 0.04em;
+							line-height: 35px;
+							font-size: 14px;
+							padding-left: 34px;
+							margin: 0px;
+							border-bottom: 1px solid #d2cbb9;
+							}
+						}
+				}
+	}

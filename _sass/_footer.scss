@@ -49,10 +49,13 @@
 			font-size: 13px;
 			letter-spacing: .066em;
 			@media(max-width: 1024px) {
-			
+			padding-left: 18px;
 			font-size:10px;
 			}
+			@media(max-width: 800px) {
 			
+			font-size:13px;
+			}
 			}
         @media(max-width: $screen-sm-max) {
             width: 100%;
@@ -82,9 +85,7 @@
                 color: #8f7d4f;
                 display: block;
 				letter-spacing: .066em;
-				  @media(max-width: $screen-sm-max) {
 				  
-				  }
                 &:hover {
                     color: #fff;
                 }
@@ -93,6 +94,9 @@
     }
     .social-icons {
 		margin:0px 54px;
+		 @media(max-width: 780px) {
+			 margin:0px 0px 0px 20px;
+		 }
         ul {
 			
             padding:0px 37px ;

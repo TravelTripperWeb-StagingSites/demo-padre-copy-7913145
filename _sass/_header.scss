@@ -16,9 +16,18 @@
 		
 		padding:23px 49px 23px 42px;
 		 @media(max-width: 1154px) {
-		 padding:9px 14px;	 
-		 width:100px;
+			 padding:14px;	 
+		 
 		 }
+		
+		img{
+			  @media(max-width: 1154px) {
+					width:100px
+		 
+				 }
+			 }
+		
+		
 		
 		}
 	.header-nav-bar{
