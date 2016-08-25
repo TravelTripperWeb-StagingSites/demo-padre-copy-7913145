@@ -52,6 +52,12 @@
 			padding-left: 18px;
 			font-size:10px;
 			}
+			a{
+				color:#fff;
+				&:hover{
+					color: #8f7d4f;
+					}
+				}
 			@media(max-width: 800px) {
 			
 			font-size:13px;

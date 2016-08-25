@@ -195,7 +195,7 @@ angular.module('rezTrip')
 
 
     function checkRoomStatus(items,status) {
-    var myVals = ["SR1D","SR1Q","SR1K","SR2D","PR1K","PM1K","LR1K","PM2Q","LS2Q","PS1K"];
+    var myVals = ["MVK","DBL","HNCO","CPKT","FYWS","FDTR","MADA","OILB"];
     var tonightrate=[];
       var i, j;
       var totalmatches = 0;
@@ -224,7 +224,7 @@ angular.module('rezTrip')
             if (myVals[i] == items[j].code)
             {
 
-             //console.log("myval"+" "+"i val"+" "+i+" "+myVals[i]+":"+"j val"+" "+j+" "+items[j].code+" "+items[j].min_average_price);
+             console.log("myval"+" "+"i val"+" "+i+" "+myVals[i]+":"+"j val"+" "+j+" "+items[j].code+" "+items[j].min_average_price);
             count=0;
             tonightrate[i]="$ "+Math.round(items[j].rate_plans[0].total_price);
             }
