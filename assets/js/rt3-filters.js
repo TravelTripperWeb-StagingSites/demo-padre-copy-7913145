@@ -9,4 +9,10 @@ angular.module('rezTrip')
       return  text ? String(text).replace('["', '<p>').replace('"]', '</p>').replace(',',' ') : '';
     }
   }
-);
+)
+.filter('filterHtmlChars', function(){
+   return function(html) {
+       var filtered = angular.element('<div>').html(html).text(); 
+       return filtered;
+   }
+});

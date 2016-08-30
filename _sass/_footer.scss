@@ -129,10 +129,19 @@
         height: 45px;
 		max-width: 263px;
         border: solid 1px #fff;
+		position:relative;
         @media(max-width: $screen-sm-max) {
             width: 260px;
 			margin-left: 16px ;
         }
+		.ctct-form-errorMessage{
+			color:#8f7d4f;
+			position:absolute;
+			top: 47px;
+			font-size: 11px;
+			left: 0px;
+					
+			}
         .textbox {
             width: 79%;
             background-color: transparent;
@@ -203,7 +212,7 @@
 		width: 300px;
         font-size: 13px;
         font-weight: normal;
-        padding: 45px 15px 7px 24px;
+        padding: 24px 15px 7px 24px;
         text-transform: uppercase;
         color: #8f7d4f;
         @media(max-width: $screen-sm-max) {
