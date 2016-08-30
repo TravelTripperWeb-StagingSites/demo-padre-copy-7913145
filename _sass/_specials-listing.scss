@@ -152,13 +152,15 @@
 										p{
 											color:#ffffff;
 											font-weight:normal;
-											
+											@media (min-width:800px){
+												min-height:80px;
+											}
 											}
 										
 								}
 						.button-position{
 											position:absolute;
-											bottom:53px;
+											top:270px;
 											left:48px;
 											@media (max-width:800px){
 											position: initial;

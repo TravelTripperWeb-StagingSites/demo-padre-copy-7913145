@@ -156,7 +156,48 @@ angular.module('rezTrip')
 	  
 	  this.getdiff=false;
     }
+    Browser.prototype.tonightavailRooms=function()
+    {
 
+      var self = this;
+      var code = [];
+      self.isRate=true;
+      rt3api.getAllRooms().then(function(result){
+              $rootScope.$apply(function() {
+                 self.roomsv = result.rooms;   
+                 angular.forEach(result.rooms, function(value, key) {
+                   code.push(value.code);
+                }); 
+              });
+          });
+      rt3api.availableRoomsTonight().then(function(response) {
+        $rootScope.$apply(function() {  
+
+            self.roomsTonight = response.room_details_list;
+
+            self.tonightErrors = response.error_info.error_details;
+            if(self.roomsTonight.length==0)
+            {
+              
+              self.isRate=false;
+              self.roomRates=checkRoomStatus(response.room_details_list, self.roomsTonight.length, code);
+            }
+            else
+            {
+              this.isRate=true;
+              self.toNightsRate="$"+Math.round(self.roomsTonight[0].min_average_price);
+              self.roomRates=checkRoomStatus(response.room_details_list, self.roomsTonight.length, code);
+
+               
+            }
+            //console.log(self.tonightErrors);
+            self.loaded = true;
+
+          });
+
+      });  
+    }
+	
     Browser.prototype.tonightRate=function()
     {
 
@@ -194,8 +235,8 @@ angular.module('rezTrip')
 
 
 
-    function checkRoomStatus(items,status) {
-    var myVals = ["MVK","DBL","HNCO","CPKT","FYWS","FDTR","MADA","OILB"];
+    function checkRoomStatus(items,status, code) {
+    var myVals = code;
     var tonightrate=[];
       var i, j;
       var totalmatches = 0;
@@ -335,7 +376,7 @@ angular.module('rezTrip')
 
 
     var browser = new Browser();
-
+    browser.tonightavailRooms();
     browser.tonightRate();
 
     browser.search();
