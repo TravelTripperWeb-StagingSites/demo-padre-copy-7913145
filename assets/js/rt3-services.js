@@ -267,7 +267,7 @@ angular.module('rezTrip')
 
              console.log("myval"+" "+"i val"+" "+i+" "+myVals[i]+":"+"j val"+" "+j+" "+items[j].code+" "+items[j].min_average_price);
             count=0;
-            tonightrate[i]="$ "+Math.round(items[j].rate_plans[0].total_price);
+            tonightrate[i]=" $"+Math.round(items[j].rate_plans[0].total_price);
             }
 
             else
