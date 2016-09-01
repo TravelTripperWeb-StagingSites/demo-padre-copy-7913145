@@ -1,14 +1,13 @@
 ---
 layout: default
 ---
+<div ng-controller="specialDetail">
 <section class="global-container banner-onscroll content-top-margin"> {% include special-details-carousel.html %} </section>
 <section class="container global-container room-container">
   <div class="row">
     <div class="col-md-12 sublinks">
       <ul>
-        <li><a href="#">naughty romance        </a> </li>
-        <li><a href="#">spring for savings</a></li>
-        <li><a href="#" class="active"> dine & stay Package</a></li>
+        <li ng-repeat="offering in offer.special_rates"><a ng-click="reloadPage"  ng-href="/special-detail/#[[offering.rate_plan_name | spaceDash]]">[[offering.rate_plan_name | filterHtmlChars]]</a></li>
        
       </ul>
     </div>
@@ -19,16 +18,16 @@ layout: default
   <div class="global-container">
     <div class="container ">
       <div class="dine-stay-container row ">
-      
+        
      
         <div class=" col-sm-12 col-md-8 ">
         <div class="dine-conent pull-right">
         
-            <h2 class="text-bold">dine & Stay</h2>
+            <h2 class="text-bold">[[specialOffer.rate_plan_name | filterHtmlChars]]</h2>
             <h3 class="text-cursive text-left">Feast for all senses</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            <p> [[specialOffer.long_description | filterHtmlChars]] </p>
             <div class="transparant-button-brown  ">
-            <a href="#" class="hover-transition">Book this offer</a>
+            <a ng-href="https://thepadrehotel.reztrip.com/en/special_offer?rate_code=[[specialOffer.rate_plan_code]]" class="hover-transition">Book this offer</a>
             </div>
          <div class="dine-shadow"></div>  
          
@@ -51,7 +50,7 @@ layout: default
         </div>
        
      <div class="dine-conent-img-palce pull-right">
-    <img src="../assets/images/dine-img.jpg" class="img-width" alt=""/></div>
+    <img ng-src="[[specialOffer.lead_photo_url.large]]" class="img-width" alt=""/></div>
     
       </div>
       
@@ -105,3 +104,4 @@ layout: default
       </div>
       
 </section>
+</div>

@@ -433,8 +433,7 @@ angular.module('rezTrip')
       var self = this;
       var searchParams = rt3Search.getParams();
       var dataRoomId = angular.element('[data-room-id]').data('room-id');
-      var roomId = { room_id: dataRoomId || $location.path().substr(1) };
-
+      var roomId = { room_id: dataRoomId || $location.path().substr(1) }; 
       self.params = $.extend(searchParams, roomId);
 
       $q.when(rt3api.getAllRooms()).then(function(response) {
@@ -443,15 +442,13 @@ angular.module('rezTrip')
             angular.extend(self, value);
           }
         });
-      });
-
+      }); 
       $q.when(rt3api.getBrgInfo(self.params)).then(function(response) {
         self.brg = response;
       });
     };
 
-    var details = new RoomDetails();
-
+    var details = new RoomDetails(); 
     $rootScope.$on('$locationChangeSuccess', function() {
       details.fetchRoomDetails();
     });
