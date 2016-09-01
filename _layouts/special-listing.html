@@ -49,7 +49,7 @@ layout: default
   <div class="global-container container" id="[[ special.rate_plan_code]]">
   <div class="specials-list row">
   <div class="col-md-12 specials-list-img  ">
-  <img src="../assets/images/special-list-img-1.jpg" class="img-width" alt=""/>
+  <img src="[[ special.lead_photo_url.large]]" class="img-width" alt=""/>
    </div>
    <div class="col-md-12 specials-list-content-area">
    <div class="specials-list-content  ">
@@ -58,7 +58,7 @@ layout: default
           <p>[[ special.short_description | filterHtmlChars ]]</p>
   </div>
 <div class="transparant-button-brown  button-position">
-            <a href="#" class="hover-transition">View Offer</a>
+            <a ng-href="/special-detail/#[[special.rate_plan_name | spaceDash]]" class="hover-transition">View Offer</a>
             </div>
 
    </div>

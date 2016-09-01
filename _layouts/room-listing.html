@@ -19,13 +19,14 @@ layout: default
   <div class="row">
     <div class="col-md-12 sublinks">
       <ul>
-        <li><a href="#">FARMER’S DAUGHTER SUITE</a> </li>
-        <li><a href="#">DOUBLE DEUCE</a> </li>
-        <li><a href="#">MAVERICK</a> </li>
-        <li><a href="#">40 WINKS</a> </li>
-        <li><a href="#">OIL BARON SUITE</a> </li>
-        <li><a href="#">HEAD HONCHO</a> </li>
-        <li><a href="#">CORNER POCKET</a> </li>
+        <li><a href="#farmer">FARMER’S DAUGHTER SUITE</a> </li>
+        <li><a href="#double">DOUBLE DEUCE</a> </li>
+        <li><a href="#maverick">MAVERICK</a> </li>
+        <li><a href="#40winks">40 WINKS</a> </li>
+        <li><a href="#oilbaron">OIL BARON SUITE</a> </li>
+        <li><a href="#headhoncho">HEAD HONCHO</a> </li>
+        <li><a href="#cornerpocket">CORNER POCKET</a> </li>
+        <li><a href="#maverickada">MAVERICK ADA</a> </li>
       </ul>
     </div>
   </div>
@@ -46,20 +47,20 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
   </section>
   <section class="container room-list-container" >
     <div class="rooms-list-top-margin " >
-      <div class="row ">
+      <div class="row " id="farmer">
         <div class="col-xs-12  col-sm-4  col-md-4  no-gutter"> <img src="../assets/images/rooms-list1.jpg"  class="img-responsive img-width padd-l40" alt=""/> </div>
         <div class="col-xs-12 col-sm-8 col-md-8 no-gutter">
-          <div class="rooms-description1 center-block">
-         
+          <div class="rooms-description1 center-block" >
+       		 
             <h4>[[browser.roomsv[6].name]]</h4>
             <h3 class="room-rate">TONIGHT’S RATE:[[ browser.roomRates[6] ]]<img src="../assets/images/room-icon1.png" class="rooms-icon-right"  alt=""/></h3>
             <span class="dimond"> ◆</span>
             <p>[[browser.roomsv[6].description]]</p>
-            <div class="brown-button buttons-container"><a href="#" class="hover-transition">VIEW SUITE</a> <a ng-href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[6].code]]" target="_blank" class="hover-transition">BOOK SUITE</a></div>
+            <div class="brown-button buttons-container"><a href="/room/farmers-daughter-suite/" class="hover-transition">VIEW SUITE</a> <a ng-href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[6].code]]" target="_blank" class="hover-transition">BOOK SUITE</a></div>
           </div>
         </div>
       </div>
-      <div class="row ">
+      <div class="row " id="double">
         <div class="col-sm-6 col-md-4 no-gutter">
           <div class="rooms-description1 rooms-description2 center-block">
         
@@ -67,7 +68,7 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
             <h3 class="room-rate">TONIGHT’S RATE:[[ browser.roomRates[1] ]]<img src="../assets/images/room-icon2.png" class="rooms-icon-left"  alt=""/></h3>
             <span class="dimond"> ◆</span>
             <p>[[browser.roomsv[1].description]]</p>
-            <div class="brown-button buttons-container"><a href="#" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[1].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
+            <div class="brown-button buttons-container"><a href="/room/double-deuce" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[1].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
           </div>
         </div>
         <div class="col-sm-6 col-md-8 no-gutter"> <img src="../assets/images/rooms-list2.jpg"  class="img-reponsive img-width" alt=""/> </div>
@@ -75,7 +76,7 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
     </div>
     
     <div class="rooms-list-top-margin ">
-      <div class="row ">
+      <div class="row " id="maverick">
         <div class="col-xs-12  col-sm-4  col-md-4  no-gutter"> <img src="../assets/images/rooms-list3.jpg"  class="img-responsive img-width padd-l40" alt=""/> </div>
         <div class="col-xs-12 col-sm-8 col-md-8 no-gutter">
           <div class="rooms-description1 center-block">
@@ -84,11 +85,11 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
             <h3 class="room-rate">TONIGHT’S RATE:[[ browser.roomRates[0] ]]<img src="../assets/images/room-icon3.png" class="rooms-icon-left rooms-gun-first"  alt=""/></h3>
             <span class="dimond"> ◆</span>
             <p>[[browser.roomsv[0].description]]</p>
-            <div class="brown-button buttons-container"><a href="#" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[0].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
+            <div class="brown-button buttons-container"><a href="/room/maverick/" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[0].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
           </div>
         </div>
       </div>
-      <div class="row ">
+      <div class="row " id="40winks">
         <div class="col-sm-6 col-md-4 no-gutter">
           <div class="rooms-description1 rooms-description2 center-block">
         
@@ -96,7 +97,7 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
             <h3 class="room-rate">TONIGHT’S RATE:[[ browser.roomRates[4] ]]<img src="../assets/images/room-icon4.png" class="rooms-icon-right rooms-hat-first"  alt=""/></h3>
             <span class="dimond"> ◆</span>
             <p>[[browser.roomsv[4].description]]</p>
-            <div class="brown-button buttons-container"><a href="#" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[4].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
+            <div class="brown-button buttons-container"><a href="/room/40-winks/" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[4].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
           </div>
         </div>
         <div class="col-sm-6 col-md-8 no-gutter"> <img src="../assets/images/rooms-list4.jpg"  class="img-reponsive img-width" alt=""/> </div>
@@ -104,7 +105,7 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
     </div>
     
     <div class="rooms-list-top-margin ">
-      <div class="row ">
+      <div class="row "  id="oilbaron">
         <div class="col-xs-12  col-sm-4  col-md-4  no-gutter"> <img src="../assets/images/rooms-list5.jpg"  class="img-responsive img-width padd-l40" alt=""/> </div>
         <div class="col-xs-12 col-sm-8 col-md-8 no-gutter">
           <div class="rooms-description1 center-block">
@@ -113,11 +114,11 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
             <h3 class="room-rate">TONIGHT’S RATE:[[ browser.roomRates[5] ]]<img src="../assets/images/room-icon2.png" class="rooms-icon-right rooms-boot-second"  alt=""/></h3>
             <span class="dimond"> ◆</span>
             <p>[[browser.roomsv[5].description]]</p>
-            <div class="brown-button buttons-container"><a href="#" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[5].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
+            <div class="brown-button buttons-container"><a href="/room/oil-baron-suite/" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[5].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
           </div>
         </div>
       </div>
-      <div class="row ">
+      <div class="row "  id="headhoncho">
         <div class="col-sm-6 col-md-4 no-gutter">
           <div class="rooms-description1 rooms-description2 center-block">
         
@@ -126,7 +127,7 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
             <img src="../assets/images/room-icon4.png" class="rooms-icon-left rooms-hat-flip"  alt=""/></h3>
             <span class="dimond"> ◆</span>
             <p>[[browser.roomsv[2].description]]</p>
-            <div class="brown-button buttons-container"><a href="#" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[2].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
+            <div class="brown-button buttons-container"><a href="/room/head-honcho-suite/" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[2].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
           </div>
         </div>
         <div class="col-sm-6 col-md-8 no-gutter"> <img src="../assets/images/rooms-list6.jpg"  class="img-reponsive img-width" alt=""/> </div>
@@ -134,7 +135,7 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
     </div>
     
 <div class="rooms-list-top-margin ">
-     <div class="row ">
+     <div class="row "  id="cornerpocket">
         <div class="col-xs-12  col-sm-4  col-md-4  no-gutter"> <img src="../assets/images/rooms-list7.jpg"  class="img-responsive img-width padd-l40" alt=""/> </div>
         <div class="col-xs-12 col-sm-8 col-md-8 no-gutter">
           <div class="rooms-description1 center-block">
@@ -143,11 +144,11 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
             <h3 class="room-rate">TONIGHT’S RATE:[[ browser.roomRates[3] ]]<img src="../assets/images/room-icon3.png" class="rooms-icon-right rooms-gun-second"  alt=""/></h3>
             <span class="dimond"> ◆</span>
             <p>[[browser.roomsv[3].description]]</p>
-            <div class="brown-button buttons-container"><a href="#" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[3].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
+            <div class="brown-button buttons-container"><a href="/room/corner-pocket/" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[3].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
           </div>
         </div>
       </div>
-      <div class="row ">
+      <div class="row "   id="maverickada">
         <div class="col-sm-6 col-md-4 no-gutter">
           <div class="rooms-description1 rooms-description2 center-block">
         
@@ -156,7 +157,7 @@ Choose between four room types:  40 Winks, Double Deuce, Maverick, and Corner Po
             <img src="../assets/images/room-icon4.png" class="rooms-icon-left rooms-hat-flip"  alt=""/></h3>
             <span class="dimond"> ◆</span>
             <p>[[browser.roomsv[7].description]]</p>
-            <div class="brown-button buttons-container"><a href="#" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[7].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
+            <div class="brown-button buttons-container"><a href="/room/marevick-ada/" class="hover-transition">VIEW SUITE</a> <a href="https://thepadrehotel.reztrip.com/search?&selected_room=[[browser.roomsv[7].code]]"  target="_blank"  class="hover-transition">BOOK SUITE</a></div>
           </div>
         </div>
         <div class="col-sm-6 col-md-8 no-gutter"> <img src="../assets/images/rooms-list6.jpg"  class="img-reponsive img-width" alt=""/> </div>
