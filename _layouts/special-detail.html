@@ -89,16 +89,19 @@ layout: default
                 </div>
           </div>
          <hr class="border-single-bottom">
-          <div class="row discover-list-container ">
+          <div class="row discover-list-container " rt3-rooms-browser="browser" ng-cloak>
           
             <h3 class="text-bold ">discover more rooms</h3>
-            <div class="col-sm-12 col-md-4"><img src="../assets/images/discover-rooms1.jpg"  class="img-width" alt=""/> <a href="#">FARMER’S DAUGHTER SUITE</a> </div>
-            <div class="col-sm-12  col-md-4"><img src="../assets/images/discover-rooms2.jpg"  class="img-width" alt=""/> <a href="#">HEAD HONCHO</a> </div>
-            <div class="col-sm-12  col-md-4"><img src="../assets/images/discover-rooms3.jpg"  class="img-width" alt=""/> <a href="#">40 WINKS</a> </div>
+            
+            <data-owl-carousel id ="owl-example" class="owl-carousel" data-options="{navigation: true,  pagination: true, rewindNav : false,  navigationText:				['&#8249;','&#8250;'], items : 3, itemsMobile:[479,1], itemsTablet:[800,2], itemsDesktop:[1220,3],	 responsive : true}">
+      <div owl-carousel-item="" ng-repeat="list in :: browser.roomsv" class="item" >
+       <img  ng-src="[[list.photos[0].yankee_large]]" alt="[[list.name]]">
+         <a ng-href="/room/[[list.name | spaceDash]]/">[[list.name]] </a>
+      </div>
+
+    </data-owl-carousel>
           </div>
-          <div class="row  button-container center-block">
-            <div class="transparant-button "><a href="#" class="hover-transition">View all Rooms</a></div>
-          </div>
+         
            <hr class="hr-border">
         </div>
       </div>

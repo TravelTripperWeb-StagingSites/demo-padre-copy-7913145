@@ -13,7 +13,7 @@
        <li ng-repeat="offering in specialOffer.images" data-target="#Carousel" data-slide-to="[[$index]]" ng-class="{active:!$index}"></li> 
     </ol>   
     <!-- Wrapper for carousel items -->
-    <div class="carousel-inner ">
+    <div class="carousel-inner carousel-height">
         <div  ng-repeat="offering in specialOffer.images"  class="item"  ng-class="{active:!$index}">
             <img ng-src="[[offering.large]]" alt="First Slide">
             <div class="room-carousel-caption">

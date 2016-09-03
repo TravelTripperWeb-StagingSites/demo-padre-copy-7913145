@@ -254,6 +254,52 @@
 			position:relative;
 			
 			}
+		.owl-item{
+			
+			padding:0px 14px;
+			
+			.item{
+				overflow:hidden;
+				}
+			img{
+				max-width: 500px;
+				}
+			}
+		.owl-buttons{
+			margin-top:35px;
+			@media (max-width : 780px)
+						{
+						margin-top:15px;
+						}
+			}
+		.owl-prev{
+							
+				background-color: #8f7d4f;
+				font-size: 30px;
+				color: #fff;
+				height: 46px;
+				width: 46px;
+				margin-right:10px;
+    			display:inline-block;
+				
+				&:hover{
+					background-color: #1a1a1a;
+					}
+			}
+		.owl-next{
+			    
+				background-color: #8f7d4f;
+				font-size: 30px;
+				color: #fff;
+				margin-let:10px;
+				height: 46px;
+				width: 46px;
+				display:inline-block;
+				&:hover{
+					background-color: #1a1a1a;
+					}
+			}	
+			
 		h3{
 			       margin: 35px 0px;
 			}
@@ -266,6 +312,7 @@
 			font-family: 'Avenir LT W01_45 Book1475508';
 			font-size:14px;
 			font-weight:600;
+			text-transform:uppercase;
 			letter-spacing: .8px;
 			background-color: #fff;
 			padding:20px 10px;
