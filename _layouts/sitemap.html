@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<section class="global-container banner-onscroll content-top-margin">
+<div class="container">
+<div class="row">
+ <div class="col-md-12 no-gutter specials-listing-banner">
+ <div class="social-icons"><ul>
+                 <li><a href="https://twitter.com/thepadrehotel" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://facebook.com/thepadrehotel"  target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li> <a href="https://instagram.com/thepadrehotel"  target="_blank"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+     </div>
+   <div class="title">The Padre Hotel</div>
+   <img src="../assets/images/specials-listing-banner.jpg" class="img-width" alt=""/> 
+    <h1>Sitemap</h1>
+   </div>
+
+</div>
+<div class="gallery-container media-container container">
+<div class="row ">
+ 
+      <div class="col-md-12">
+    <ul class="sitemap">
+       {% assign sorted = (site.pages | sort: 'Order') %}
+         {% for p in sorted %}
+             {% if p.url != '/css/style.css'  and  p.url !='/css/font-awesome.css'    %}
+             
+              {% if  p.url != '/sitemap.html'  %}
+              {% if  p.url !='/404/' and  p.url !='/thankyou/' %}
+                {% if  p.url == '/'  %}
+                <li><a href="{{ p.url }}">Home</a></li>
+                {% else %} 
+                      {% if p.url contains '/room/' %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/room/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% elsif p.url contains '/offer/' %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/offer/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% elsif p.url contains '/area/' %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/area/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% else %} 
+                      <li><a href="{{ p.url }}">{{ p.url  | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% endif %}
+                  {% endif %}
+                 {% endif %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            </ul>
+
+    
+</div>
+   
+ 
+
+   </div>
+   </div>
+  <hr class=" hr-border">
+ </div>
+</section>
