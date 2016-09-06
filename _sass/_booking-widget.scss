@@ -76,7 +76,7 @@
   width: 11px;
   height: 11px;
   margin-left: 10px;
-  background: url('../images/booking-widget/arrow-right.svg') no-repeat;
+  background: url('/assets/images/booking-widget/arrow-right.svg') no-repeat;
   background-size: 11px 11px;
 }
 
@@ -110,7 +110,7 @@
   &.-email::after {
     width: 17px;
     height: 13px;
-    background: url('../images/booking-widget/footer-email.svg') no-repeat;
+    background: url('/assets/images/booking-widget/footer-email.svg') no-repeat;
     background-size: 17px 13px;
     vertical-align: middle;
   }
@@ -120,7 +120,7 @@
   &.-contacts::before {
     width: 17px;
     height: 16px;
-    background: url('../images/booking-widget/footer-contacts.svg') no-repeat;
+    background: url('/assets/images/booking-widget/footer-contacts.svg') no-repeat;
     background-size: 17px 16px;
     vertical-align: bottom;
   }
@@ -128,7 +128,7 @@
   &.-reservation::before {
     width: 14px;
     height: 18px;
-    background: url('../images/booking-widget/footer-reservation.svg') no-repeat;
+    background: url('/assets/images/booking-widget/footer-reservation.svg') no-repeat;
     background-size: 14px 18px;
     vertical-align: bottom;
   }
@@ -359,7 +359,7 @@
     font-size: 48px;
     font-weight: lighter;
     text-align: left;
-    color: #e19865;
+    color: #8f7d4f;
     line-height: 46px; 
   }
 }
@@ -434,7 +434,7 @@
     width: 11px;
     height: 9px;
     margin-top: -4px;
-    background: url('../images/booking-widget/arrow-bottom.svg') no-repeat;
+    background: url('/assets/images/booking-widget/arrow-bottom.svg') no-repeat;
     background-size: 11px 9px;
   }
 }
@@ -457,7 +457,7 @@
   border-bottom: 1px solid #fff;
 
   &.-error {
-    border-top: 1px solid #e19865;
+    border-top: 1px solid #8f7d4f;
     border-bottom: 1px solid #3a9dc4;
   }
 }
@@ -476,7 +476,7 @@
     height: 100%;
     border: none;
     outline: none;
-    color: #e19865;
+    color: #8f7d4f;
   }
 }
 
@@ -498,7 +498,7 @@
     width: 17px;
     height: 17px;
     margin-top: -10px;
-    background: url('../images/booking-widget/calendar.svg') no-repeat;
+    background: url('/assets/images/booking-widget/calendar.svg') no-repeat;
     background-size: 17px 17px;
   }
 }
