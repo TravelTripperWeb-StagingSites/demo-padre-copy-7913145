@@ -85,6 +85,16 @@ a:active {
         }
     }
 }
+.gold-button{
+	a{
+	 background-color: #8f7d4f;
+	 color:#fff;
+	 border:none;
+	 &:hover{
+		 background-color: #1a1a1a;
+		 }
+	 }
+	}
 .white-button {
     a {
         font-family: 'Avenir LT W01_45 Book1475508';
@@ -215,6 +225,24 @@ h5{
 		}
 		
 	}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+	background-color: #8f7d4f;
+	padding:11px 15px ;
+	color:#fff;
+    border: 1px solid #1a1a1a;
+	
+	&:hover{
+		background-color: #1a1a1a;
+		color:#fff;
+		}
+}
+
+
 /*font-family:'Didot W01 Roman';
 font-family:'Didot W01 Italic';
 font-family:'Didot W01 Bold';
