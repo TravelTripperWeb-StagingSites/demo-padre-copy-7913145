@@ -208,6 +208,13 @@ h5{
     letter-spacing: 1.3px;
 	
 }
+.common-container{
+		padding:50px 0px 0px 0px;
+		@media (max-width: 1154px){
+		padding:20px 0px 0px 0px;
+		}
+		
+	}
 /*font-family:'Didot W01 Roman';
 font-family:'Didot W01 Italic';
 font-family:'Didot W01 Bold';
@@ -244,3 +251,7 @@ font-family:'Blythe W01 Mono45';*/
 @import 'aboutus_listing_banner';
 @import 'contactus';
 @import 'owl-carousel';
+@import 'sitemap';
+@import 'booking-widget';
+@import 'datepicker';
+
