@@ -7,12 +7,12 @@ $(window).on('load scroll resize', function () {
 	
 	
 	if(mscroll > 50){
-		$(".nav-normal-scroll").addClass("-show");
+		$(".nav-normal-scroll").addClass("showmenu");
 		$(".banner-onscroll").addClass("-banner-onscroll-padding");
 		
 	}
 	else{
-		$(".nav-normal-scroll").removeClass("-show");
+		$(".nav-normal-scroll").removeClass("showmenu");
 		$(".banner-onscroll").removeClass("-banner-onscroll-padding");
 	}
 	
