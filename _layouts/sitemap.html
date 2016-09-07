@@ -17,24 +17,40 @@ layout: default
    </div>
 
 </div>
-<div class="gallery-container container ">
+<div class="gallery-container media-container common-container container">
 <div class="row ">
  
-      
-   <div class="col-md-12 text-center"><br><br>
+      <div class="col-md-12">
+    <ul class="sitemap">
+       {% assign sorted = (site.pages | sort: 'Order') %}
+         {% for p in sorted %}
+             {% if p.url != '/css/style.css'  and  p.url !='/css/font-awesome.css'    %}
+             
+              {% if  p.url != '/sitemap/'  %}
+              {% if  p.url !='/404/' and  p.url !='/thankyou/' %}
+                {% if  p.url == '/'  %}
+                <li><a href="{{ p.url }}">Home</a></li>
+                {% else %} 
+                      {% if p.url contains '/room/' %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/room/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% elsif p.url contains '/special/' %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/special/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% elsif p.url contains '/area/' %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/area/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% else %} 
+                      <li><a href="{{ p.url }}">{{ p.url  | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% endif %}
+                  {% endif %}
+                 {% endif %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            </ul>
 
-
-<h5 >Interested in working at the Padre?</h5>
-   <p> From restaurant positions to hotel staff, we're always looking for qualified individuals to join our team!</p><br>
-   
-   <div class="brown-button"><a href="../pdf/EDS_EmploymentApp_ENG_082611.pdf" target="_blank" class="hover-transition">DOWNLOAD APPLICATION</a></div>
-   
-<div class="media-container"><br>
-
-Email your application to <a href="mailto:careers@eatdrinkandsleep.net">careers@eatdrinkandsleep.net</a></div>
- 
+    
 </div>
-  
+   
+ 
 
    </div>
    </div>
