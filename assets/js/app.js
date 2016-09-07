@@ -43,6 +43,23 @@ proApp.filter('spaceDash', function() {
        return filtered;
    }
 });
+
+proApp.filter('dateFrmt', function(){ 
+	 return function(date) { 
+	 console.log(date) ;
+	  if(date =="null" || date ==""){
+		  return date;
+	  }else{ 
+		 var d = new Date(date); 
+		 var dd = d.getDate();
+		 var mm = d.getMonth()+1;
+		 var yy = d.getFullYear(); 
+		 var newdate = mm+"-"+dd+"-"+yy;
+       return newdate;
+	  }
+   }
+});
+
 proApp.directive("owlCarousel", function() {
 	return {
 		restrict: 'E',
@@ -75,6 +92,7 @@ proApp.directive('owlCarouselItem', [function() {
 		}
 	};
 }]);
+
 
 
  
