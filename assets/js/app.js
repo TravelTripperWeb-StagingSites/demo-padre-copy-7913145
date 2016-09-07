@@ -3,13 +3,14 @@ var proApp = angular.module('rezTrip');
  
 proApp.controller('specialDetail', function($scope, $http){
 	window.onhashchange = function() {
-   window.location.reload();
-}   
+         window.location.reload();
+      }   
 
   /// $scope.items1 = [1,2,3,4,5];
   ///$scope.items2 = [1,2,3,4,5,6,7,8,9,10];
 	$scope.reloadPage = function(){$window.location.reload();}
-	 var url =  window.location.hash.substr(1); 
+	 var _array = window.location.pathname.split("/"); 
+     url = _array[_array.length-2]; 
      $scope.nameurl = url.replace(/-/g, " ");  
 	 $scope.special = function() {
            

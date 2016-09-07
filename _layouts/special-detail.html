@@ -7,7 +7,7 @@ layout: default
   <div class="row">
     <div class="col-md-12 sublinks">
       <ul>
-        <li ng-repeat="offering in offer.special_rates"><a ng-click="reloadPage"  ng-href="/special-detail/#[[offering.rate_plan_name | spaceDash]]">[[offering.rate_plan_name | filterHtmlChars]]</a></li>
+        <li ng-repeat="offering in offer.special_rates"><a ng-click="reloadPage"  ng-href="/special/[[offering.rate_plan_name | spaceDash]]">[[offering.rate_plan_name | filterHtmlChars]]</a></li>
        
       </ul>
     </div>
@@ -27,7 +27,7 @@ layout: default
             <h3 class="text-cursive text-left">Feast for all senses</h3>
             <p> [[specialOffer.long_description | filterHtmlChars]] </p>
             <div class="transparant-button-brown  ">
-            <a ng-href="https://thepadrehotel.reztrip.com/en/special_offer?rate_code=[[specialOffer.rate_plan_code]]" class="hover-transition">Book this offer</a>
+            <a ng-href="https://thepadrehotel.reztrip.com/en/special_offer?rate_code=[[specialOffer.rate_plan_code]]" class="hover-transition"  target="_blank">Book this offer</a>
             </div>
          <div class="dine-shadow"></div>  
          
@@ -42,10 +42,10 @@ layout: default
         <div class="col-sm-12   col-md-4  facilities-section  ">
          <h6>Offer features</h6>
           <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Lorem ipsum dolor sit amet</li>
+            <li>Best Rate Guarantee</li>
+            <li>Exclusive Special Offers</li>
+            <li>Easily Modify Reservations</li>
+            
           </ul>
         </div>
        

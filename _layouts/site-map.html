@@ -26,15 +26,15 @@ layout: default
          {% for p in sorted %}
              {% if p.url != '/css/style.css'  and  p.url !='/css/font-awesome.css'    %}
              
-              {% if  p.url != '/sitemap.html'  %}
+              {% if  p.url != '/site-map.html'  %}
               {% if  p.url !='/404/' and  p.url !='/thankyou/' %}
                 {% if  p.url == '/'  %}
                 <li><a href="{{ p.url }}">Home</a></li>
                 {% else %} 
                       {% if p.url contains '/room/' %}
                       <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/room/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
-                      {% elsif p.url contains '/offer/' %}
-                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/offer/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% elsif p.url contains '/special/' %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/special/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
                       {% elsif p.url contains '/area/' %}
                       <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/area/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
                       {% else %} 
