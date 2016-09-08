@@ -9,6 +9,14 @@ body {
         margin: 0px;
     }
 }
+a, a:hover, a:active, a:visited {
+    text-decoration:none;
+	color: #9d8d64;
+   
+}
+a:hover{
+	color:#1a1a1a;
+	}
 hr{ border:none;}
 a,
 a:hover,
@@ -283,5 +291,6 @@ font-family:'Blythe W01 Mono45';*/
 @import 'sitemap';
 @import 'booking-widget';
 @import 'datepicker';
+@import 'dine';
 
 
