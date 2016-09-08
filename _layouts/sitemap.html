@@ -35,8 +35,21 @@ layout: default
                       <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/room/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
                       {% elsif p.url contains '/special/' %}
                       <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/special/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
-                      {% elsif p.url contains '/area/' %}
-                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/area/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% elsif p.url contains '/dine/' %}
+                           {% if p.Order == 61 %}
+                            <li><a href="">Dine</a></li>
+                           {% endif %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/dine/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% elsif p.url contains '/play/' %}
+                           {% if p.Order == 71 %}
+                            <li><a href="">Play</a></li>
+                           {% endif %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/play/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
+                      {% elsif p.url contains '/gather/' %}
+                           {% if p.Order == 81 %}
+                            <li><a href="">Gather</a></li>
+                           {% endif %}
+                      <li class="submenu"> - <a href="{{ p.url }}">{{ p.url  | remove: '/gather/' | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
                       {% else %} 
                       <li><a href="{{ p.url }}">{{ p.url  | remove: '/' | replace: '-', ' ' | camelcase}}</a></li>
                       {% endif %}
