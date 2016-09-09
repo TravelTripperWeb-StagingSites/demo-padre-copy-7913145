@@ -50,4 +50,36 @@ $(document).ready(function(){
         
         $('#back-to-top').tooltip('show');
 
-});
+ //Date Picker
+
+//$(".main-date").datepicker({
+//            dateFormat: "yy-mm-dd",
+//			altField  : '#arrival_date',
+//			altFormat : 'yy-mm-dd',
+//            minDate: 0,
+//            onSelect: function (date) {
+//                var date2 = $('#arrival_date').datepicker('getDate');
+//                date2.setDate(date2.getDate() + 1);
+//                $('#departure_date').datepicker('setDate', date2);
+//                //sets minDate to dt1 date + 1
+//                $('#departure_date').datepicker('option', 'minDate', date2);
+//            }
+//        });
+//        $('#departure_date, .alternate-date, .alternate-date-1').datepicker({
+//            dateFormat: "yy-mm-dd",
+//			altField  : '#departure_dates',
+//			altFormat : 'yy-mm-dd',
+//            onClose: function () {
+//                var dt1 = $('#v').datepicker('getDate');
+//                console.log(dt1);
+//                var dt2 = $('#departure_date').datepicker('getDate');
+//                if (dt2 <= dt1) {
+//                    var minDate = $('#departure_date').datepicker('option', 'minDate');
+//                    $('#departure_date').datepicker('setDate', minDate);
+//                }
+//            }
+//        });
+
+
+}); 
+
