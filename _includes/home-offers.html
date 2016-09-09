@@ -9,32 +9,44 @@
         <p> Whether it's a romantic evening, a foodie retreat or an extended vacay you're looking for, <br> let your unique hotel packages be the cherry on top of your Padre getaway.
           </p>
       </div>
-      <div class="offers-list">
+      <div class="offers-list"  rt3-special-rates="specials">
         <div class="row no-gutter">
           <div class="col-sm-4 col-md-4 ">
-            <div class="item-padding"> <img src="../assets/images/home-offers.jpg"  class="img-width"  alt=""/>
-              <h5>SPECIAL OFFER ONE</h5>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit... </p>
-              <div class="brown-button "><a href="#" class="hover-transition view-offer-button">View offer</a></div>
+            <div class="item-padding"> 
+             <div class="img-container">
+            <img src="[[ specials.special_rates[1].lead_photo_url.large]]"  class="img-width"  alt=""/>
+            </div>
+              <h5>[[ specials.special_rates[1].rate_plan_name | filterHtmlChars ]]</h5>
+              <p>[[ specials.special_rates[1].short_description | filterHtmlChars ]]</p>
+              <div class="brown-button "><a  ng-href="/special/[[specials.special_rates[1].rate_plan_name | spaceDash]]/" class="hover-transition view-offer-button">View offer</a></div>
             </div>
           </div>
           <div class="col-sm-4 col-md-4 ">
-            <div class="item-padding"> <img src="../assets/images/home-offers2.jpg"  class="img-width"  alt=""/>
-              <h5>SPECIAL OFFER TWO</h5>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
-              <div class="brown-button "><a href="#" class="hover-transition view-offer-button">View offer</a></div>
+            <div class="item-padding"> 
+            <div class="img-container">
+            <img src="[[ specials.special_rates[2].lead_photo_url.large]]"  class="img-width"  alt=""/>
+            </div>
+              <h5>[[ specials.special_rates[2].rate_plan_name | filterHtmlChars ]]</h5>
+              <p>[[ specials.special_rates[2].short_description | filterHtmlChars ]]</p>
+              <div class="brown-button "><a  ng-href="/special/[[specials.special_rates[2].rate_plan_name | spaceDash]]/" class="hover-transition view-offer-button">View offer</a></div>
             </div>
           </div>
           <div class="col-sm-4 col-md-4 ">
-            <div class="item-padding"> <img src="../assets/images/home-offers3.jpg"  class="img-width"  alt=""/>
-              <h5>SPECIAL OFFER THREE</h5>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit... </p>
-              <div class="brown-button "><a href="#" class="hover-transition view-offer-button">View offer</a></div>
+            <div class="item-padding">
+             <div class="img-container">
+             <img src="[[ specials.special_rates[3].lead_photo_url.large]]"  class="img-width"  alt=""/>
+             </div>
+              <h5>[[ specials.special_rates[3].rate_plan_name | filterHtmlChars ]]</h5>
+              <p>[[ specials.special_rates[3].short_description | filterHtmlChars ]]</p>
+              <div class="brown-button "><a  ng-href="/special/[[specials.special_rates[3].rate_plan_name | spaceDash]]/" class="hover-transition view-offer-button">View offer</a></div>
             </div>
           </div>
         </div>
       </div>
-      <div> <img src="../assets/images/offers-couple-img.jpg"  class="img-width" alt=""/>
+      <div class="row view-all-button-container ">
+  <div class="transparant-button "><a href="/special-listing/" class="hover-transition">View all offers</a></div>
+</div>
+      <div class="viewallspecials"> <img src="/assets/images/offers-couple-img.jpg"  class="img-width" alt=""/>
       
        </div>
     </div>
@@ -65,17 +77,17 @@
           <div class="carousel-inner">
             <div class="item active">
               <h4>testimonials</h4>
-              <p>Old school charm melded with modern amenities, this hotel has it all without the cookie-cutter corporate feel of many other hotels. This weekend was my second visit to the Padre and, in my opinion, there is no other place to stay in Bakersfield. The decor and design touches blow me away every time and my room this round (Forty-winks) was just as stunning as it was comfortable.</p>
+              <p>Old school charm melded with modern amenities, this hotel has it all without the cookie-cutter corporate feel of many other hotels. The decor and design touches blow me away every time and my room this round (Forty-winks) was just as stunning as it was comfortable.</p>
               <div class="date">Heather P.</div>
             </div>
             <div class="item">
               <h4>testimonials</h4>
-              <p>The Padre Hotel meets and exceeds all my expectations. It's charming, great food, and excellent customer service. The only place to stay in Bakersfield is the Padre Hotel. The bed is so comfortable, the rooms are beautifully decorated, the shower is nice. The Belvedere is the restaurant inside the hotel, the food is very good, wine selection is perfect. The staff is there to please, excellent customer service all around. When you arrive they have valet parking, no need to find a parking place. They make your stay so nice and easy.</p>
+              <p>The Padre Hotel meets and exceeds all my expectations. It's charming, great food, and excellent customer service. The bed is so comfortable, the rooms are beautifully decorated, the shower is nice. The Belvedere is the restaurant inside the hotel, the food is very good, wine selection is perfect. The staff is there to please, excellent customer service all around. </p>
               <div class="date">Victoria M. </div>
             </div>
             <div class="item">
               <h4>testimonials</h4>
-              <p>My first time at the Padre Hotel here in Bakersfield and I will always only stay here. Just had one of the best meals in ages here in the Belvedere Room. The hotel ambiance is super chic, hip, uber cool - I am from the Bay Area and the Padre Hotel is a hotel you would expect to find only in a major hip, metropolitan and cosmopolitan city like San Francisco, L.A. or Portland.</p>
+              <p>My first time at the Padre Hotel here in Bakersfield and I will always only stay here. Just had one of the best meals in ages here in the Belvedere Room. The hotel ambiance is super chic, hip, uber cool - a hotel you would expect to find only in a major hip, metropolitan and cosmopolitan city like San Francisco, L.A. or Portland.</p>
               <div class="date">Jo S.</div>
             </div>
             <div class="item">
