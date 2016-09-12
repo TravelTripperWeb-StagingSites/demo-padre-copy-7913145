@@ -1,5 +1,5 @@
 
-  <section > 
+
   <div id="Carousel" class="carousel slide " data-ride="carousel">
     <!-- Carousel indicators -->
     <div class="title">The Padre Hotel</div>
@@ -14,7 +14,7 @@
     </ol>   
     <!-- Wrapper for carousel items -->
     <div class="carousel-inner carousel-height">
-        <div  ng-repeat="offering in specialOffer.images"  class="item"  ng-class="{active:!$index}">
+        <div  ng-repeat="offering in specialOffer.images"  class="item banner-color-overlay"  ng-class="{active:!$index}">
             <img ng-src="[[offering.large]]" alt="First Slide">
             <div class="room-carousel-caption">
            <h3>[[specialOffer.rate_plan_name | filterHtmlChars]] </h3>
@@ -26,4 +26,4 @@
     </div>
     
 </div>
-  </section>
+

@@ -13,7 +13,7 @@
     </ol>   
     <!-- Wrapper for carousel items -->
     <div class="carousel-inner carousel-height" role="listbox">
-        <div ng-repeat="photo in details.photos"  class="item"  ng-class="{active:!$index}">
+        <div ng-repeat="photo in details.photos"  class="item banner-color-overlay"  ng-class="{active:!$index}">
             <img ng-src="[[photo.large]]" alt="banner room [[details.name]]">
             <div class="room-carousel-caption">
            <h3>[[details.name]]</h3>
