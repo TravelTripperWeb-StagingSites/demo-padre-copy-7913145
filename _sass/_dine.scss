@@ -2,6 +2,9 @@
 .dine {
 	text-align: left;
 	color: #8d8d8d;
+	 @media(max-width: 1024px) {
+		 margin-top: 0px;
+	 }
 	 .brown-button {
 			 text-align:center; 
 			
