@@ -1,4 +1,9 @@
 .location-container {
+	
+	.info-row-container{
+		position:relative;
+		}
+		
     h3 {
         font-size: 48px;
         font-family: 'Avenir LT W01_95 Black1475556';
@@ -24,10 +29,10 @@
         background-color: #8f7d4f;
         color: #fff !important;
         .col-md-12 {
-            padding: 0px;
-            padding-left: 55px;
+            padding:0px 45px ;
+          
 			@media (max-width: 1024px) {
-				 padding-left: 36px;
+				 padding:0px 36px;
 			 }
 			
 			 @media (max-width: 768px) {
@@ -44,15 +49,13 @@
 				 padding-top: 0px;
 			 }
         }
-        .time-out {
-            padding-top: 20px;
-        }
+        
         h3 {
-            padding-left: 55px;
-            padding-top: 55px;
+			padding:45px 0px 0px 45px;
+           
 			@media (max-width: 1024px) {
-				     padding-left: 30px;
-   					padding-top: 10px;
+				padding:10px 0px 0px 30px;
+				    
 			 }
 			
 			
@@ -63,7 +66,7 @@
 			
         }
         h6 {
-            padding-top: 40px;
+            padding-top: 10px;
 			@media (max-width: 1024px) {
 				    padding-top: 10px;
 			 }
@@ -71,6 +74,10 @@
 				 padding-top: 0px;
 			 }
         }
+		h4{
+			font-size: 30px;
+    		font-family: 'Avenir LT W01_95 Black1475556';
+			}
         p {
             color: #fff;
             font-size: 12px;
@@ -89,7 +96,7 @@
     }
     .logo-container {
         background-color: #1a1a1a;
-        img {
+        .logo {
             padding: 52px 0px;
 			@media (max-width: 1024px) {
 				    padding: 36px 0px;
@@ -127,8 +134,28 @@
         }
     }
     .location-images {
-        padding-left: 52px !important;
-        float: right;
+        position: absolute;
+		right: 0px;
+		top: 0px;
+		
+		height: 100%;
+	    max-width: 354px;
+		.location-img1{
+			background-image:url(/assets/images/location-img1.jpg);
+			
+			background-size:cover;
+			height:35%;
+			}
+		.location-img2{
+			background-image:url(/assets/images/location-img2.jpg);
+			
+			height:25%;
+			}
+		.location-img3{
+			background-image:url(/assets/images/location-img3.jpg);
+			background-size:cover;
+			height:40%;
+			}	
         @media(max-width: 768px) {
             display: none;
         }
