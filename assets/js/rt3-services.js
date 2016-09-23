@@ -327,20 +327,43 @@ angular.module('rezTrip')
             if(self.rooms.length==0)
             {
               self.getRate="Check Availability";
+              self.getRateCode="";
               $('.-count').css("font-size", "23px");
               $('.-count').css("line-height", "28px");
               $('.-count').css("text-align", "center"); 
             }
             else
             {
-              
+               
               ////added by tufail
                angular.forEach(self.rooms, function(value) {
-                self.rateToday.push(value.min_average_price); 
+                self.rateToday.push(value.min_average_price);  
                }); 
-              self.getRate = "$ "+Math.min.apply(null, self.rateToday);  
+
+                function indexOfMax(arr) {
+                    if (arr.length === 0) {
+                        return -1;
+                    }
+
+                    var max = arr[0];
+                    var maxIndex = 0;
+
+                    for (var i = 1; i < arr.length; i++) {
+                        if (arr[i] > max) {
+                            maxIndex = i;
+                            max = arr[i];
+                        }
+                    }
+
+                    return maxIndex;
+                }
+              var roomtodayi = self.rateToday.indexOf(Math.min.apply(null, self.rateToday)); 
+               
+
+              //self.getRate = "$ "+Math.min.apply(null, self.rateToday);  
               //console.log("min" + Math.min.apply(null, self.rateToday));
-              //self.getRate = "$ "+Math.round(self.rooms[0].min_average_price);
+               self.getRate = "$ "+ Math.round(self.rooms[roomtodayi].min_average_price);
+               self.getRateCode =  self.rooms[roomtodayi].code;
               $('.-count').css("font-size", "43px");
               $('.-count').css("line-height", "40px");
               $('.-count').css("text-align", "left"); 
