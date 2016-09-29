@@ -1,4 +1,5 @@
 ---
+- gather/corporate-meetings-events/: gather/corporate-meetings-and-events/
 - events/: play/events/
 - '4': ''
 - '3': ''
