@@ -1,4 +1,5 @@
 ---
+- play/contests/: play/events/
 - gather/holidayparties/: gather/holiday-parties/
 - gather/corporate-meetings-events/: gather/corporate-meetings-and-events/
 - events/: play/events/
