@@ -3,10 +3,11 @@
   <div id="Carousel" class="carousel slide " data-ride="carousel">
     <!-- Carousel indicators -->
     <div class="title">The Padre Hotel</div>
-    <div class="social-icons"><ul>
+    <div class="social-icons">
+    <ul>
                  <li><a href="https://twitter.com/thepadrehotel" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://facebook.com/thepadrehotel"  target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li> <a href="https://instagram.com/thepadrehotel"  target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://instagram.com/thepadrehotel"  target="_blank"><i class="fa fa-instagram"></i></a></li>
               </ul>
      </div>
     <ol class="carousel-indicators">
@@ -19,8 +20,11 @@
     <!-- Wrapper for carousel items -->
     <div class="carousel-inner">
         <div class="item banner-color-overlay active">
+            {% region home-banner-1 %}
             <img src="/assets/images/banner1.jpg" alt="First Slide">
+             
             <div class="carousel-caption">
+            {% region home-banner-1-caption %}
             <h4>A Sophisticated & unique</h4>
             <h3>Boutique <br>Hotel</h3>
               <a class="hover-transition" href="/rooms-and-suites/">Discover More </a>
