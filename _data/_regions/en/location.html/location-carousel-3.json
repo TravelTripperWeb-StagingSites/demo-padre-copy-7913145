@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-[{"_template":"html","content":"<p><img src=\"../../../../../../../../../assets/images/location-banner1.jpg\" alt=\"First Slide\" /></p>\n<div class=\"location-carousel-caption\">\n<h3>Stay and Play</h3>\n</div>","rendered_height":500}]
-=======
-[{"_template":"html","content":"<p><img src=\"../../../../../../../../../assets/images/location-banner3.jpg\" alt=\"Fourth Slide\" /></p>\n<div class=\"location-carousel-caption\">\n<h3>Kick Up Your Boots</h3>\n</div>","rendered_height":500}]
->>>>>>> 5889747cf8a74e9f91140e16b0a44ee2c2806fa4
+
+[{"_template":"html","content":"<img src=\"../../../../../../../../../assets/images/location-banner3.jpg\" alt=\"Third Slide\" />\n<div class=\"location-carousel-caption\">\n<h3>KICK UP YOUR BOOTS</h3>\n</div>","rendered_height":500}]
+
