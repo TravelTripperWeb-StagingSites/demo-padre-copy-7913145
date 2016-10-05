@@ -10,8 +10,10 @@ permalink: pretty
 default_lang: 'en'
 languages: ['en']
  
+port: 4001
 exclude:
   - 'sitemap.json'
-
-
-port: 4001
+  - 'assets'
+  
+keep_files: ['assets']
+rsync_copy: ['_assets']
