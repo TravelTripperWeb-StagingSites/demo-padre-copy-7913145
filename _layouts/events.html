@@ -24,15 +24,17 @@ layout: default
           {% for eventitem in eventitems %}
           <div  class="event-list">
             <h5 >{{ eventitem.title }}</h5>
-            <img src="{{ eventitem.banner_image.url }}" class="img-width" alt="{{ eventitem.title }}"/>
+            <img src={{ eventitem.banner_image.url }} class="img-width" alt="{{ eventitem.title }}"/>
             <div class="row ">
               <div class="col-md-6">
                 <p  class="description">{{ eventitem.description }}</p>
               </div>
               <div class="col-md-6 link-container">
-                <div class="ticket"><span>
-                  <div class="transparant-button "> <a href="https://www.eventbrite.com/e/70s-wedding-murder-mystery-dinner-tickets-28236377766" class="hover-transition" target="_blank">BUY TICKETS</a> </div>
-                  </span> </div>
+                <div class="ticket">
+                  <span>
+                 {{ eventitem.button_text }}
+                  </span> 
+                </div>
               </div>
             </div>
           </div>
