@@ -13,7 +13,6 @@ languages: ['en']
 port: 4001
 exclude:
   - 'sitemap.json'
-  - 'assets'
   
 keep_files: ['assets']
 rsync_copy: ['_assets']
