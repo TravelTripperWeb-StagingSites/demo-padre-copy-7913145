@@ -3,64 +3,73 @@ layout: default
 ---
 <section class="global-container banner-onscroll content-top-margin  "> {% include location-carousel.html %} </section>
 <section class="container global-container location-container">
-  <div class="row info-row-container" >
-    <div class="col-md-3 no-gutter logo-container " >
-      <div class="row no-gutter address">
-         {% region location-info %}
-      </div>
-      <div class="row no-gutter logo-container">
-        <div class="col-md-12" > <img src="/assets/images/location-logo.jpg" class="center-block logo"  alt=""/></div>
-      </div>
+<div class="row info-row-container" >
+  <div class="col-md-3 no-gutter logo-container " >
+    <div class="row no-gutter address">
+      {% region location-info %}
     </div>
-    <div class="col-md-5  directions">
-       {% region location-directions %}
-    </div>
-    <div class="col-md-4  no-gutter location-images" >
-      <div class="location-img1"></div>
-      <div class="location-img2"></div>
-      <div class="location-img3"></div>
+    <div class="row no-gutter logo-container">
+
+      <div class="col-md-12" >
+       {% region location-info-logo %}
+     
+
+      </div>
     </div>
   </div>
-  <div class="downtown-section row" style="">
-    <div class="col-sm-12 col-md-9 no-gutter"> <img src="/assets/images/location-img-belowaddress.jpg" class="img-width" /></div>
-    <div class="col-sm-12 col-md-3 content no-gutter" >
-       {% region location-downtown %}
+  <div class="col-md-5  directions">
+    {% region location-directions %}
+  </div>
+  <div class="col-md-4  no-gutter location-images" >
+    <div class="location-img1"></div>
+    <div class="location-img2"></div>
+    <div class="location-img3"></div>
+  </div>
+</div>
+<div class="downtown-section row" style="">
+  <div class="col-sm-12 col-md-9 no-gutter location-bowntown-images">
+   {% region location-downtown-images %}
+    <img src="/assets/images/location-img-belowaddress-img1.jpg" />
+    <img src="/assets/images/location-img-belowaddress-img2.jpg" />
+  </div>
+  <div class="col-sm-12 col-md-3 content no-gutter" >
+    {% region location-downtown %}
+    
+  </div>
+</div>
+<div class="attractions">
+  <div class="row">
+    <div class="col-md-4">
+      {% region location-attractions %}
+    </div>
+    <div class="col-md-8"><img src="../assets/images/location_map.jpg" class="img-width "  alt=""/></div>
+  </div>
+</div>
+<div class="row home-offers  section-padding">
+  <div class="header">
+    {% region location-events-title %}
+    <span class="dimond"> ◆</span>
+    {% region location-events-para %}
+  </div>
+  <div class="offers-list">
+    <div class="row no-gutter">
+      <div class="col-sm-4 col-md-4 ">
+        {% region location-events-list-1 %}
+      </div>
+      <div class="col-sm-4 col-md-4 ">
+        {% region location-events-list-2 %}
+      </div>
+      <div class="col-sm-4 col-md-4 ">
+        {% region location-events-list-3 %}
+      </div>
       
     </div>
   </div>
-  <div class="attractions">
-    <div class="row">
-      <div class="col-md-4">
-         {% region location-attractions %}
-      </div>
-      <div class="col-md-8"><img src="../assets/images/location_map.jpg" class="img-width "  alt=""/></div>
-    </div>
-  </div>
-  <div class="row home-offers  section-padding">
-    <div class="header">
-      {% region location-events-title %}
-      <span class="dimond"> ◆</span>
-    {% region location-events-para %}
-    </div>
-    <div class="offers-list">
-      <div class="row no-gutter">
-        <div class="col-sm-4 col-md-4 ">
-          {% region location-events-list-1 %}
-        </div>
-         <div class="col-sm-4 col-md-4 ">
-          {% region location-events-list-2 %}
-        </div>
-        <div class="col-sm-4 col-md-4 ">
-          {% region location-events-list-3 %}
-        </div>
-       
-      </div>
-    </div>
-  </div>
-  <div class="row view-all-button-container">
-    <div class="transparant-button "><a href="/play/events/" class="hover-transition">View all events</a></div>
-  </div>
-  <div class="row">
-    <hr class=" hr-border">
-  </div>
+</div>
+<div class="row view-all-button-container">
+  <div class="transparant-button "><a href="/play/events/" class="hover-transition">View all events</a></div>
+</div>
+<div class="row">
+  <hr class=" hr-border">
+</div>
 </section>
