@@ -8,6 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 permalink: pretty
  
 default_lang: 'en'
+
 languages: ['en']
  
 exclude:
