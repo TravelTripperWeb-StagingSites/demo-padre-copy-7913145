@@ -8,24 +8,41 @@ layout: default
       <div class="row no-gutter padre-gallery" >
       {% assign gallery-hotel-items = site.data._models.gallery-hotel | sort: 'sort_order' %}
       {% for gallery-hotel-item in gallery-hotel-items %}
-      <a class="col-xs-6 col-sm-4" href="{{ gallery-hotel-item.thumbnail_image.url }}" > 
-      <img src="{{ gallery-hotel-item.large_image.url }}" /> </a>
+      <a class="col-xs-6 col-sm-4" href="{{ gallery-hotel-item.large_image.url }}" > 
+      <img src="{{ gallery-hotel-item.thumbnail_image.url }}" /> </a>
       {% endfor %}  
         
          
       </div>
       {% region  gallery-rooms-title %}
+
       <div class="row no-gutter padre-gallery" >
-         {% region  gallery-rooms-images %}
+      {% assign gallery-rooms-items = site.data._models.gallery-rooms | sort: 'sort_order' %}
+      {% for gallery-rooms-item in gallery-rooms-items %}
+      <a class="col-xs-6 col-sm-4" href="{{ gallery-rooms-item.large_image.url }}" > 
+      <img src="{{ gallery-rooms-item.thumbnail_image.url }}" /> </a>
+      {% endfor %}  
       </div>
       
       {% region  gallery-bar-title %}
-      <div class="row no-gutter padre-gallery" >
-         {% region  gallery-bar-images %}
+
+       <div class="row no-gutter padre-gallery" >
+      {% assign gallery-dining-items = site.data._models.gallery-dining | sort: 'sort_order' %}
+      {% for gallery-dining-item in gallery-dining-items %}
+      <a class="col-xs-6 col-sm-4" href="{{ gallery-dining-item.large_image.url }}" > 
+      <img src="{{ gallery-dining-item.thumbnail_image.url }}" /> </a>
+      {% endfor %}  
       </div>
+
       {% region  gallery-events-title %}
       
-      {% region  gallery-events-images %}
+      <div class="row no-gutter padre-gallery" >
+      {% assign gallery-events-items = site.data._models.gallery-events | sort: 'sort_order' %}
+      {% for gallery-events-item in gallery-events-items %}
+      <a class="col-xs-6 col-sm-4" href="{{ gallery-events-item.large_image.url }}" > 
+      <img src="{{ gallery-events-item.thumbnail_image.url }}" /> </a>
+      {% endfor %}  
+      </div>
       
       
    </div>
