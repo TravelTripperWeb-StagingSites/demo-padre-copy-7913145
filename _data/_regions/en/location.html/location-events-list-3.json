@@ -1,3 +1,7 @@
-
-[{"_template":"html","content":"<div class='item-padding'> <img src='/assets/images/events2.jpg' class='img-width' alt=''/> <h5>BRUNCH & BUBBLES</h5> <p>Because brunch pairs best with bubbles, every Sunday in the Belvedere Room at The Padre we're serving up free flowing ...</p><div class='brown-button '><a href='/play/events/#Brunch' class='hover-transition'>View event</a></div></div>","rendered_height":500}]
-
+[
+  {
+    "_template": "html",
+    "content": "<div class='item-padding'> <img src='/assets/images/events3.jpg' class='img-width' alt=''/> <h5>BREWS & BITES BEER DINNER SERIES - MODERN TIMES BREWERY</h5> <p>Join us on October 17th at 7pm as we pair with Modern Times Brewery for the 4th event of our Brews & Bites beer dinner series!...</p><div class='brown-button '><a href='/play/events/#brews'>View event</a></div></div>",
+    "rendered_height": 500
+  }
+]

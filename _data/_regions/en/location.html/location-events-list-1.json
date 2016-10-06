@@ -1,3 +1,7 @@
-
-[{"_template":"html","content":" <div class='item-padding'> <img src='/assets/images/events1.jpg' class='img-width' alt=''/> <h5>FALL WINE SERIES </h5> <p>Sip It, Swish It, Swig It, Swill It! The summer may be winding down, but we’re still wining every 3rd Wednesday of the month ... </p><div class='brown-button '><a href='/play/events/#fallwine' class='hover-transition'>View event</a></div></div>","rendered_height":500}]
-
+[
+  {
+    "_template": "html",
+    "content": " <div class='item-padding'> <img src='/assets/images/events1.jpg' class='img-width' alt=''/> <h5> 70'S WEDDING MURDER MYSTERY DINNER </h5> <p>Travel back in time, deceit and groovy kind of love are in the air! Join us on Saturday, October 29th at our 70's Wedding Murder...</p><div class='brown-button '><a href='/play/events/#Wedding' >View event</a></div></div>",
+    "rendered_height": 500
+  }
+]
