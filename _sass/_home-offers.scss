@@ -27,7 +27,13 @@
 		 }
 	
 		p{
-			color:#fff;	
+			 color:#fff;	
+			 width: 50%;
+   			 margin: auto;
+   			@media (max-width: 768px)
+				 {
+ 					padding:0 15px; 
+				 }
 			}
 		}
 	 .offers-list{
