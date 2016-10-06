@@ -1,14 +1,6 @@
 {
-  "large_image": {
-    "required": true,
-    "type": "image"
-  },
-  "sort_order": {
-    "required": true,
-    "type": "integer"
-  },
-  "thumbnail_image": {
-    "required": true,
-    "type": "image"
-  }
+  
+  "thumbnail_image": {"type":"image","required":true},
+  "large_image": {"type":"image","required":true},
+  "sort_order": {"type":"integer","required":true}
 }
