@@ -6,7 +6,12 @@ layout: default
       {% region gallery-hotel-title %}
       
       <div class="row no-gutter padre-gallery" >
-         {% region  gallery-hotel-images %}
+       {% assign gallery-hotel-items = site.data._models.gallery-hotel | sort: 'sort_order' %}
+          {% for gallery-hotel-item in gallery-hotel-items %}
+      <a class="col-xs-6 col-sm-4" href={{ eventitem.thumbnail_image.url }}> 
+      <img src={{ eventitem.large_image.url }} /> </a>
+      {% endfor %}  
+        
          
       </div>
       {% region  gallery-rooms-title %}
